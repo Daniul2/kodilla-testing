@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-11T17:31:27.328Z" hostname="DANIL228" time="2.354">
+<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-11T17:43:18.407Z" hostname="DANIL228" time="2.284">
   <properties/>
-  <testcase name="testListBooksInHandsOfOneBook()" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="2.314"/>
-  <testcase name="testListBooksInHandsOfFiveBooks()" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.023"/>
-  <testcase name="testListBooksInHandsOfZeroBooks()" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.011"/>
+  <testcase name="testCalculateAdvStatisticsWith100Users()" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="2.284"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\medve\scoop\persist\gradle\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.12\be4984cb6fd1ef1d11f218a648889dfda44b8a15\byte-buddy-agent-1.14.12.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
