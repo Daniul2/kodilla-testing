@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for adding and removing figures" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-11T16:28:47.665Z" hostname="DANIL228" time="0.013">
+  <properties/>
+  <testcase name="Test removing a figure from the collector" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestAddRemove" time="0.005"/>
+  <testcase name="Test adding a figure to the collector" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestAddRemove" time="0.006"/>
+  <system-out><![CDATA[Executing test #3
+Executing test #4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
