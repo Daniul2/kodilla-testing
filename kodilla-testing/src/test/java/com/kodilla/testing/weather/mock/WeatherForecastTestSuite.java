@@ -44,7 +44,6 @@ class WeatherForecastTestSuite {
     @Test
     @DisplayName("Test: Calculate average temperature")
     void testCalculateAverageTemperatureWithMock() {
-        // Given
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
         // When
         double average = weatherForecast.calculateAverageTemperature();
