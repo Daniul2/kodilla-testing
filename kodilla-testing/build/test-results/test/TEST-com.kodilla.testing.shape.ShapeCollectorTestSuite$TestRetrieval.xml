@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for retrieving figures" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-18T20:09:03.262Z" hostname="DANIL228" time="0.014">
+  <properties/>
+  <testcase name="Case: Index below zero" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestRetrieval" time="0.004"/>
+  <testcase name="Case: Index out of bounds (too high)" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestRetrieval" time="0.002"/>
+  <testcase name="testGetFigureValidIndex()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestRetrieval" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

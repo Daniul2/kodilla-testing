@@ -1,75 +1,111 @@
 package com.kodilla.testing.shape;
 
 import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("TDD: Shape Collector Test Suite")
-public class ShapeCollectorTestSuite {
+@DisplayName("TDD: ShapeCollector Test Suite")
+class ShapeCollectorTestSuite {
 
-    private static int testCounter = 0;
-
-    @BeforeAll
-    public static void beforeAllTests() {
-        System.out.println("Starting all tests for ShapeCollector.");
-    }
-
-    @AfterAll
-    public static void afterAllTests() {
-        System.out.println("All tests for ShapeCollector are finished.");
-    }
+    private ShapeCollector collector;
 
     @BeforeEach
-    public void beforeEveryTest() {
-        testCounter++;
-        System.out.println("Executing test #" + testCounter);
+    void setUp() {
+        collector = new ShapeCollector();
     }
 
     @Nested
-    @DisplayName("Tests for adding and removing figures")
+    @DisplayName("Tests for adding and removing")
     class TestAddRemove {
         @Test
-        @DisplayName("Test adding a figure to the collector")
         void testAddFigure() {
-            ShapeCollector collector = new ShapeCollector();
-            Shape shape = new Circle(4.0);
+            // Given
+            Shape shape = new Circle(10);
+            // When
             collector.addFigure(shape);
-            Assertions.assertEquals(shape, collector.getFigure(0));
+            // Then
+            assertEquals(shape, collector.getFigure(0));
         }
 
         @Test
-        @DisplayName("Test removing a figure from the collector")
-        void testRemoveFigure() {
-            ShapeCollector collector = new ShapeCollector();
-            Shape shape = new Square(5.0);
+        void testRemoveFigureExisting() {
+            // Given
+            Shape shape = new Square(5);
             collector.addFigure(shape);
+            // When
             boolean result = collector.removeFigure(shape);
-            Assertions.assertTrue(result);
-            Assertions.assertNull(collector.getFigure(0));
+            // Then
+            assertTrue(result);
+            assertNull(collector.getFigure(0));
+        }
+
+        @Test
+        @DisplayName("Case: Remove figure that is not in the list")
+        void testRemoveFigureNotExisting() {
+            // Given
+            Shape shape = new Triangle(4, 5);
+            // When
+            boolean result = collector.removeFigure(shape);
+            // Then
+            assertFalse(result);
         }
     }
 
     @Nested
-    @DisplayName("Tests for retrieving and showing figures")
-    class TestGetShow {
+    @DisplayName("Tests for retrieving figures")
+    class TestRetrieval {
         @Test
-        @DisplayName("Test getting a figure by index")
-        void testGetFigure() {
-            ShapeCollector collector = new ShapeCollector();
-            Shape shape = new Triangle(3.0, 4.0);
+        void testGetFigureValidIndex() {
+            // Given
+            Shape shape = new Circle(2);
             collector.addFigure(shape);
-            Shape result = collector.getFigure(0);
-            Assertions.assertEquals(shape, result);
+            // When
+            Shape retrieved = collector.getFigure(0);
+            // Then
+            assertEquals(shape, retrieved);
         }
 
         @Test
-        @DisplayName("Test showing all figure names as one String")
-        void testShowFigures() {
-            ShapeCollector collector = new ShapeCollector();
-            collector.addFigure(new Circle(2.0));
-            collector.addFigure(new Square(3.0));
-            collector.addFigure(new Triangle(2.0, 5.0));
+        @DisplayName("Case: Index below zero")
+        void testGetFigureNegativeIndex() {
+            // When
+            Shape result = collector.getFigure(-1);
+            // Then
+            assertNull(result);
+        }
+
+        @Test
+        @DisplayName("Case: Index out of bounds (too high)")
+        void testGetFigureIndexOutOfBounds() {
+            // Given
+            collector.addFigure(new Square(4));
+            // When
+            Shape result = collector.getFigure(1);
+            // Then
+            assertNull(result);
+        }
+    }
+
+    @Nested
+    @DisplayName("Tests for displaying figures")
+    class TestDisplay {
+        @Test
+        void testShowFiguresMultiple() {
+            // Given
+            collector.addFigure(new Circle(2));
+            collector.addFigure(new Square(3));
+            // When
             String result = collector.showFigures();
-            String expected = "Circle, Square, Triangle";
-            Assertions.assertEquals(expected, result);
+            // Then
+            assertEquals("Circle, Square", result);
+        }
+
+        @Test
+        @DisplayName("Case: Show figures when collection is empty")
+        void testShowFiguresEmpty() {
+            // When
+            String result = collector.showFigures();
+            // Then
+            assertEquals("", result);
         }
     }
 }

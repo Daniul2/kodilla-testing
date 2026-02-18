@@ -3,9 +3,9 @@ package com.kodilla.testing.shape;
 import java.util.Objects;
 
 public class Triangle implements Shape {
-    private String name = "Triangle";
-    private double base;
-    private double height;
+    private static final String name = "Triangle";
+    private final double base;
+    private final double height;
 
     public Triangle(double base, double height) {
         this.base = base;
