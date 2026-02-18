@@ -26,7 +26,6 @@ class WeatherForecastTestSuite {
         temperaturesMap.put("Wroclaw", 24.8);
         temperaturesMap.put("Warszawa", 25.2);
         temperaturesMap.put("Gdansk", 26.1);
-        // Налаштовуємо мок, щоб він повертав ці дані при кожному виклику
         when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
     }
 
@@ -35,7 +34,7 @@ class WeatherForecastTestSuite {
     void testCalculateForecastWithMock() {
         // Given
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
-        // When
+
         int quantityOfSensors = weatherForecast.calculateForecast().size();
         // Then
         Assertions.assertEquals(5, quantityOfSensors);

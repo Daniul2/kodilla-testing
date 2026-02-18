@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Forum User Filtering Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-18T18:57:44.648Z" hostname="DANIL228" time="0.071">
+  <properties/>
+  <testcase name="Test behavior with an empty list" classname="com.kodilla.testing.stream.forumuser.ForumTestSuite" time="0.046"/>
+  <testcase name="Test filtering users with various criteria" classname="com.kodilla.testing.stream.forumuser.ForumTestSuite" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
