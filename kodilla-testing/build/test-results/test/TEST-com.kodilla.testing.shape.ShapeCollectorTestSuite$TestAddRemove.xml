@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests for adding and removing" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-18T20:09:03.286Z" hostname="DANIL228" time="0.02">
-  <properties/>
-  <testcase name="testRemoveFigureExisting()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestAddRemove" time="0.005"/>
-  <testcase name="testAddFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestAddRemove" time="0.004"/>
-  <testcase name="Case: Remove figure that is not in the list" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestAddRemove" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

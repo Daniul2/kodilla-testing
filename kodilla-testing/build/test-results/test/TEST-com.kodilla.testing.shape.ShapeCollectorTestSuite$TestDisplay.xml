@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests for displaying figures" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-18T20:09:03.187Z" hostname="DANIL228" time="0.057">
-  <properties/>
-  <testcase name="Case: Show figures when collection is empty" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestDisplay" time="0.048"/>
-  <testcase name="testShowFiguresMultiple()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestDisplay" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
