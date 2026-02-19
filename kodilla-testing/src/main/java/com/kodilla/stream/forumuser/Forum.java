@@ -4,7 +4,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Forum {
+/**
+ * Repository class providing a list of forum users.
+ * Removed 'final' modifier to allow extensibility for testing.
+ */
+public class Forum {
     private final List<ForumUser> userList = new ArrayList<>();
 
     public Forum() {
@@ -18,7 +22,9 @@ public final class Forum {
         userList.add(new ForumUser(7, "Declan Booth", 'M', LocalDate.of(2001, 11, 2), 1));
     }
 
-    // Returning a defensive copy to prevent original list modification from outside
+    /**
+     * Returns a copy of the user list to maintain data safety.
+     */
     public List<ForumUser> getUserList() {
         return new ArrayList<>(userList);
     }
