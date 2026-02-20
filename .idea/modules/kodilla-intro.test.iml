@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="kodilla-intro:test" external.linked.project.path="$MODULE_DIR$/../../kodilla-intro" external.root.project.path="$MODULE_DIR$/../../kodilla-intro" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../kodilla-intro/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../kodilla-intro/out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../kodilla-intro/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../kodilla-intro/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../kodilla-intro/src/test/resources" type="java-test-resource" />
     </content>
-    <orderEntry type="jdk" jdkName="corretto-21" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="kodilla-intro.main" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:5.10.0" level="project" />
