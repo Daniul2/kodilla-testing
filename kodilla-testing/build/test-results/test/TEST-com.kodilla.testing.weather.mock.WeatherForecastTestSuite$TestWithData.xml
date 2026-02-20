@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests with filled temperature list" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-19T08:19:03.592Z" hostname="DANIL228" time="0.059">
-  <properties/>
-  <testcase name="Test: Calculate median temperature" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite$TestWithData" time="0.008"/>
-  <testcase name="Test: Calculate average temperature" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite$TestWithData" time="0.008"/>
-  <testcase name="Test: Calculate forecast" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite$TestWithData" time="0.039"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
