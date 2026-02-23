@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.NoSuchElementException;
 
 public class RpsGame {
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
     private final Random random = new Random();
     private String playerName;
     private int winsRequired;
@@ -13,12 +13,18 @@ public class RpsGame {
     private int computerWins;
     private boolean end = false;
 
+    // Point 1: Constructor injection allows for easier testing and closing the scanner in Runner
+    public RpsGame(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
     public void start() {
         System.out.println("Welcome to Rock-Paper-Scissors!");
         System.out.print("Enter your name: ");
         playerName = readString();
 
-        resetGameSettings();
+        askForWinsLimit(); // Point 3: Separated logic
+        showInstructions();
 
         while (!end) {
             playMatch();
@@ -29,7 +35,7 @@ public class RpsGame {
         System.out.println("Thank you for playing!");
     }
 
-    private void resetGameSettings() {
+    private void askForWinsLimit() {
         System.out.print("Enter number of wins required for final victory: ");
         while (true) {
             try {
@@ -41,7 +47,6 @@ public class RpsGame {
                 System.out.print("Invalid input. Please enter a number: ");
             }
         }
-        showInstructions();
     }
 
     private void playMatch() {
@@ -60,7 +65,8 @@ public class RpsGame {
                 }
                 case "n" -> {
                     if (confirmAction("restart the whole game")) {
-                        resetGameSettings();
+                        askForWinsLimit();
+                        showInstructions();
                         playerWins = 0;
                         computerWins = 0;
                     }
@@ -76,15 +82,16 @@ public class RpsGame {
     }
 
     private void processRound(int playerMove) {
-        int computerMove = random.nextInt(3) + 1; // 1-3
+        int computerMove = random.nextInt(3) + 1;
         System.out.println("You played: " + moveName(playerMove));
         System.out.println("Computer played: " + moveName(computerMove));
 
-        if (playerMove == computerMove) {
+        // Point 2: Logic moved to external class
+        int winner = RpsLogic.determineWinner(playerMove, computerMove);
+
+        if (winner == 0) {
             System.out.println("It's a tie!");
-        } else if ((playerMove == 1 && computerMove == 3) ||
-                (playerMove == 2 && computerMove == 1) ||
-                (playerMove == 3 && computerMove == 2)) {
+        } else if (winner == 1) {
             System.out.println("You win this round!");
             playerWins++;
         } else {
@@ -105,21 +112,21 @@ public class RpsGame {
                 }
             } else if (choice.equals("n")) {
                 if (confirmAction("start a new game")) {
-                    resetGameSettings();
+                    askForWinsLimit();
+                    showInstructions();
                     validChoice = true;
                 }
             }
         }
     }
 
-    // Bezpieczne czytanie inputu
     private String readString() {
         try {
             if (scanner.hasNextLine()) {
                 return scanner.nextLine().trim().toLowerCase();
             }
         } catch (NoSuchElementException | IllegalStateException e) {
-            return "x"; // W razie błędu strumienia, traktuj jak wyjście
+            return "x";
         }
         return "x";
     }

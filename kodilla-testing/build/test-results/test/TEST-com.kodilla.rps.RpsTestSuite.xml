@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RPS Round Logic Test Suite" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-23T12:09:03.139Z" hostname="DANIL228" time="0.041">
+  <properties/>
+  <testcase name="Testing all 9 move combinations (Draws, Wins, Losses)" classname="com.kodilla.rps.RpsTestSuite" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
