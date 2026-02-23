@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-23T09:20:22.843Z" hostname="DANIL228" time="0.056">
-  <properties/>
-  <testcase name="Test if getPeopleQuantity correctly calculates the sum of population across all continents" classname="com.kodilla.stream.world.WorldTestSuite" time="0.056"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -2,7 +2,6 @@ package com.kodilla.stream.portfolio;
 
 import java.util.ArrayList;
 import java.util.List;
-/** Project board containing task lists */
 public final class Board {
     private final List<TaskList> taskLists = new ArrayList<>();
     private final String name;
