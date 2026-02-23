@@ -8,12 +8,13 @@ import java.util.List;
  */
 public final class Continent {
     private final String continentName;
-    private final List<Country>countries = new ArrayList<>();
+    private final List<Country> countries = new ArrayList<>();
 
     public Continent(String continentName) {
         this.continentName = continentName;
     }
-    public void addCountry(Country country){
+
+    public void addCountry(Country country) {
         countries.add(country);
     }
 

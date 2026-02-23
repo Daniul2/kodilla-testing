@@ -1,4 +1,4 @@
-package com.kodilla.testing.stream.beautifier;
+package com.kodilla.stream.beautifier;
 
 
 import com.kodilla.stream.beautifier.PoemBeautifier;

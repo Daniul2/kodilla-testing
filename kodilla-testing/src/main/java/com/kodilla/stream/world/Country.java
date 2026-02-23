@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 /**
- * Represents a single country with its population quantity.
+ * Represents a single country with its population.
  */
 public final class Country {
     private final String countryName;

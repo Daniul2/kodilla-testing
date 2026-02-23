@@ -17,10 +17,10 @@ public final class World {
      * Calculates the total population of all countries across all continents.
      * Uses flatMap to reach countries and reduce to sum BigDecimals.
      */
-    public BigDecimal getPeopleQuantity(){
+    public BigDecimal getPeopleQuantity() {
         return continents.stream()
-                .flatMap(continent -> continent.getCountries().stream()) // Flattens List of Continents into Stream of Countries
-                .map(Country::getPeopleQuantity)     // Maps each Country to its BigDecimal population
-                .reduce(BigDecimal.ZERO, (sum, current) -> sum.add(current)); // Accumulates the sum
+                .flatMap(continent -> continent.getCountries().stream()) // Flattens continents into a stream of countries
+                .map(Country::getPeopleQuantity)                        // Maps each country to its population quantity
+                .reduce(BigDecimal.ZERO, BigDecimal::add);              // Sums up all population values
     }
 }

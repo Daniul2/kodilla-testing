@@ -1,4 +1,4 @@
-package com.kodilla.testing.stream.forumuser;
+package com.kodilla.stream.forumuser;
 
 import com.kodilla.stream.forumuser.ForumProcessor;
 import com.kodilla.stream.forumuser.ForumUser;

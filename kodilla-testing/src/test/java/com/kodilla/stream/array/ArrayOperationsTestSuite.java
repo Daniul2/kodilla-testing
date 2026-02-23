@@ -1,4 +1,4 @@
-package com.kodilla.testing.stream.array;
+package com.kodilla.stream.array;
 
 import com.kodilla.stream.array.ArrayOperations;
 import org.junit.jupiter.api.DisplayName;

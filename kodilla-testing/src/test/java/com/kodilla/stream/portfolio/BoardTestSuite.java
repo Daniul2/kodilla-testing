@@ -1,4 +1,4 @@
-package com.kodilla.testing.stream.portfolio;
+package com.kodilla.stream.portfolio;
 
 import com.kodilla.stream.portfolio.*;
 import org.junit.jupiter.api.Test;
