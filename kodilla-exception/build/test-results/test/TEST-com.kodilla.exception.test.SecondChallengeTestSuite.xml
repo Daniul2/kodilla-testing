@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.exception.test.SecondChallengeTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-25T13:00:30.270Z" hostname="DANIL228" time="0.047">
-  <properties/>
-  <testcase name="testProbablyIWillThrowException()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.047"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
