@@ -3,8 +3,8 @@ package com.kodilla.exception.test;
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {
-        if (b == 0) {
-            throw new ArithmeticException();
+        if (b == 0.0) {
+            throw new ArithmeticException("Division by zero is not allowed!");
         }
         return a / b;
     }
@@ -14,13 +14,13 @@ public class FirstChallenge {
         FirstChallenge firstChallenge = new FirstChallenge();
 
         try {
-            // We call the method that might throw an exception
+            // The method that might throw an exception
             double result = firstChallenge.divide(3, 0);
             System.out.println("Result: " + result);
 
         } catch (ArithmeticException e) {
             // Handle the division by zero exception
-            System.out.println("Error: Division by zero is not allowed.");
+            System.out.println("Error: " + e);
 
         } finally {
             // This block will always run
