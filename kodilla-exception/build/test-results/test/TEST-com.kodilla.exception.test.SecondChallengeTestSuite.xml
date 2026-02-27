@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SecondChallenge Test Suite" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-02-27T09:02:12.659Z" hostname="DANIL228" time="0.243">
+  <properties/>
+  <testcase name="Boundary Test: Should throw exception exactly at x=2.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.041"/>
+  <testcase name="[1] 2.0, 1.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.051"/>
+  <testcase name="[2] 0.9, 1.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.003"/>
+  <testcase name="[3] 1.5, 1.5" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.003"/>
+  <testcase name="Boundary Test: Should NOT throw exception exactly at x=1.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.005"/>
+  <testcase name="Should throw exception when x is greater than 2.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.004"/>
+  <testcase name="Should throw exception when x is below 1.0" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.005"/>
+  <testcase name="Boundary Test: Should throw exception exactly when y=1.5" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.004"/>
+  <testcase name="Should NOT throw exception when arguments are valid (x=1.5, y=1.0)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

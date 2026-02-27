@@ -7,13 +7,13 @@ public class ExceptionHandling {
         try{
             // Testing with values that should work
             String result = secondChallenge.probablyIWillThrowException(1.5,2.0);
-            System.out.println(result);
+            System.out.println("Result: " + result);
         } catch (Exception e) {
             // Handling the exception
-            System.out.println("Error: An exception occurred due to invalid arguments.");
+            System.out.println("Problem with arguments: " + e);
         }finally {
             // Always executes
-            System.out.println("The process has been finished.");
+            System.out.println("Method execution finished.");
         }
     }
 }

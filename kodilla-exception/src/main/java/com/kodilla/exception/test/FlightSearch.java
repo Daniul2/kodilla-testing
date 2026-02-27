@@ -4,29 +4,29 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FlightSearch {
-    public void findFlight(Flight flight)throws RouteNotFoundException{
-//        Key = Name of the City, for example, Warsaw,London...
-//        Value = true if it's accessible or false if it's not
-        Map<String,Boolean>airportMap = new HashMap<>();
-        airportMap.put("Warsaw", true);
-        airportMap.put("London", true);
-        airportMap.put("Berlin", false);
-        airportMap.put("Paris", true);
 
-        String arrivalAirport = flight.getArrivalAirport();
-        //Some tries for checking if the airport exists
-        if (airportMap.containsKey(arrivalAirport)){
-            boolean isAvailable = airportMap.get(arrivalAirport);
-            if (isAvailable) {
-                System.out.println("Flight to " + arrivalAirport + " is available.");
+    private final Map<String, Boolean> airportMap;
+
+    public FlightSearch() {
+        airportMap = new HashMap<>();
+        airportMap.put("London", true);
+        airportMap.put("Paris", true);
+        airportMap.put("Berlin", false);
+        airportMap.put("Warsaw", true);
+    }
+
+    public void findFlight(Flight flight) throws RouteNotFoundException {
+        String arrival = flight.getArrivalAirport();
+
+        if (airportMap.containsKey(arrival)) {
+            boolean available = airportMap.get(arrival);
+            if (available) {
+                System.out.println("Flight to " + arrival + " is available!");
             } else {
-                System.out.println("Flight to " + arrivalAirport + " is currently closed.");
+                System.out.println("Sorry, flights to " + arrival + " are currently suspended.");
             }
         } else {
-            // Throw exception if airport is not in the map
-            throw new RouteNotFoundException("Route not found: Airport '" + arrivalAirport + "' does not exist in our system!");
+            throw new RouteNotFoundException("The airport '" + arrival + "' was not found in our system.");
         }
     }
-        }
-
-
+}
