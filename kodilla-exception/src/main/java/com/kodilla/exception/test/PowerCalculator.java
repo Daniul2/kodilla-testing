@@ -2,11 +2,9 @@ package com.kodilla.exception.test;
 
 public class PowerCalculator {
     public long calculatePower(int base,int exponent){
-        // Handle power of 0
         if (exponent == 0){
             return 1;
         }
-        // Handle 0 base with positive exponent
         if (base == 0){
             return 0;
         }
@@ -17,12 +15,12 @@ public class PowerCalculator {
             return base;
         }
         long result = 1;
-        // Loop to multiply base by itself
         for (int i = 0; i < exponent; i++) {
             result *= base;
         }
         return result;
     }
+
 
     public static void main(String[] args) {
         PowerCalculator calculator = new PowerCalculator();

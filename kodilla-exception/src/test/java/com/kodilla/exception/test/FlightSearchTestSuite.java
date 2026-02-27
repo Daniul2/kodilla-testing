@@ -15,7 +15,6 @@ class FlightSearchTestSuite {
         Flight flight = new Flight("Warsaw", "London");
 
         // When & Then
-        // Airport "London" is in the map, so it should NOT throw an exception
         assertDoesNotThrow(() -> flightSearch.findFlight(flight));
     }
 
@@ -26,9 +25,9 @@ class FlightSearchTestSuite {
         Flight flight = new Flight("Warsaw", "New York");
 
         // When & Then
-        // Airport "New York" is NOT in the map, so it SHOULD throw RouteNotFoundException
         assertThrows(RouteNotFoundException.class, () -> flightSearch.findFlight(flight));
     }
+
 
     @Test
     void testFindFlightWhenAirportIsClosed() {
@@ -37,8 +36,7 @@ class FlightSearchTestSuite {
         Flight flight = new Flight("Warsaw", "Berlin");
 
         // When & Then
-        // "Berlin" is in the map but marked as 'false'.
-        // This should NOT throw the RouteNotFoundException because the airport exists.
+
         assertDoesNotThrow(() -> flightSearch.findFlight(flight));
     }
 }

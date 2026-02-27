@@ -1,19 +1,17 @@
 package com.kodilla.exception.test;
 
 public class ExceptionHandling {
-    public static void main(String[] args) {
+
+    public void handleChallenge(double x, double y) {
         SecondChallenge secondChallenge = new SecondChallenge();
 
-        try{
-            // Testing with values that should work
-            String result = secondChallenge.probablyIWillThrowException(1.5,2.0);
+        try {
+            String result = secondChallenge.probablyIWillThrowException(x, y);
             System.out.println("Result: " + result);
         } catch (Exception e) {
-            // Handling the exception
-            System.out.println("Problem with arguments: " + e);
-        }finally {
-            // Always executes
-            System.out.println("Method execution finished.");
+            System.out.println("Exception caught: Arguments out of range.");
+        } finally {
+            System.out.println("Challenge execution finished.");
         }
     }
 }

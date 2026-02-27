@@ -1,7 +1,6 @@
 package com.kodilla.exception.test;
 
 public class FlightMain {
-
     public static void main(String[] args) {
         FlightSearch searcher = new FlightSearch();
 

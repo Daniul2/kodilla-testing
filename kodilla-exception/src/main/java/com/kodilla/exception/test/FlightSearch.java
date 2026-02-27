@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class FlightSearch {
 
+
     private final Map<String, Boolean> airportMap;
 
     public FlightSearch() {
