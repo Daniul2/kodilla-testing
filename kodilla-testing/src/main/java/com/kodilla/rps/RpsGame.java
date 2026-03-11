@@ -13,6 +13,7 @@ public class RpsGame {
     private int computerWins;
     private boolean end = false;
 
+
     // Point 1: Constructor injection allows for easier testing and closing the scanner in Runner
     public RpsGame(Scanner scanner) {
         this.scanner = scanner;
