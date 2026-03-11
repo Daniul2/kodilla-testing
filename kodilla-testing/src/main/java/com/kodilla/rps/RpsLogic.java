@@ -6,6 +6,7 @@ public class RpsLogic {
         if (playerMove == computerMove){
             return 0;
         }
+
         // Winning conditions for the player:
         // 1 (Rock) beats 3 (Scissors)
         // 2 (Paper) beats 1 (Rock)
