@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DisplayName("RPS Round Logic Test Suite")
 
 public class RpsTestSuite {
+
     @Test
     @DisplayName("Testing all 9 move combinations (Draws, Wins, Losses)")
     void testDetermineWinner(){
