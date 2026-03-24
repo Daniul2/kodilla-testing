@@ -3,10 +3,10 @@ package com.kodilla.blackjack.logic;
 import java.io.Serializable;
 
 public class Card implements Serializable {
-    private final String suit;
-    private final String rank;
+    private final String suit; // c, d, h, s
+    private final String rank; // 2, 3... a
     private final int value;
-    private final String imagePath; // Example: "cards/2c.gif"
+    private final String imagePath;
 
     public Card(String suit, String rank, int value, String imagePath) {
         this.suit = suit;
@@ -17,6 +17,7 @@ public class Card implements Serializable {
 
     public int getValue() { return value; }
     public String getRank() { return rank; }
+    public String getSuit() { return suit; }
     public String getImagePath() { return imagePath; }
 
     @Override
