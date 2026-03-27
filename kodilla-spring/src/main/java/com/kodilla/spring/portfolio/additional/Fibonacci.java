@@ -8,6 +8,7 @@ public class Fibonacci {
         if (n <= 0) return 0;
         if (n == 1) return 1;
 
+
         long prev = 0;
         long current = 1;
 

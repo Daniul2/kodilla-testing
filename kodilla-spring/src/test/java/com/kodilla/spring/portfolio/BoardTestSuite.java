@@ -15,9 +15,9 @@ class BoardTestSuite {
         Board board = context.getBean(Board.class);
 
         //When
-        board.getToDoList().getTasks().add("Task to do");
-        board.getInProgressList().getTasks().add("Task in progress");
-        board.getDoneList().getTasks().add("Task done");
+        board.getToDoList().addTask("Task to do");
+        board.getInProgressList().addTask("Task in progress");
+        board.getDoneList().addTask("Task done");
 
         //Then
         assertEquals("Task to do", board.getToDoList().getTasks().get(0));
