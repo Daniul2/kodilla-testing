@@ -4,6 +4,19 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/kodilla-exception" />
+            <option value="$PROJECT_DIR$/kodilla-spring" />
+            <option value="$PROJECT_DIR$/kodilla-spring-intro" />
+            <option value="$PROJECT_DIR$/kodilla-spring-web" />
+            <option value="$PROJECT_DIR$/kodilla-testing" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/kodilla-exception" />
         <option name="gradleHome" value="" />
         <option name="modules">
