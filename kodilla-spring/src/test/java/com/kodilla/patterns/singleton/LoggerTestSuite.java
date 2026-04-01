@@ -5,34 +5,35 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class LoggerTestSuite {
+public class LoggerTestSuite {
     private static Logger logger;
 
     @BeforeAll
     public static void setUp(){
         logger = Logger.INSTANCE;
-        logger.log("First log message");
 
     }
     @Test
     void testGetLastLog(){
 
         //When
+        logger.log("Log for test 1");
+
+        // When
         String result = logger.getLastLog();
 
-        //Then
-        assertEquals("First log message", result);
+        // Then
+        assertEquals("Log for test 1", result);
 
     }
     @Test
     void testNewLog(){
-        String newLog = "User login: admin";
+        logger.log("User login: admin");
 
-        //When
-        logger.log(newLog);
+        // When
         String result = logger.getLastLog();
 
-        //Then
-        assertEquals(newLog, result);
+        // Then
+        assertEquals("User login: admin", result);
     }
 }

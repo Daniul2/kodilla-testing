@@ -1,6 +1,6 @@
 package com.kodilla.patterns.singleton;
 
-public enum Logger {
+enum Logger {
     INSTANCE;
 
     private String lastLog = "";
