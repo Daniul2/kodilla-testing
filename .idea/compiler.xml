@@ -2,10 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="kodilla-course.kodilla-spring-intro.main" target="17" />
+      <module name="kodilla-course.kodilla-spring-intro.test" target="17" />
+      <module name="kodilla-course.kodilla-spring-web.main" target="17" />
+      <module name="kodilla-course.kodilla-spring-web.test" target="17" />
       <module name="kodilla-exception" target="21" />
       <module name="kodilla-exception.main" target="21" />
       <module name="kodilla-exception.test" target="21" />
-      <module name="kodilla-testing" target="21" />
       <module name="kodilla-testing.main" target="21" />
       <module name="kodilla-testing.test" target="21" />
     </bytecodeTargetLevel>
@@ -13,10 +16,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kodilla-course.kodilla-spring" options="-parameters" />
-      <module name="kodilla-course.kodilla-spring-intro" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-intro.main" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-intro.test" options="-parameters" />
-      <module name="kodilla-course.kodilla-spring-web" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-web.main" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-web.test" options="-parameters" />
       <module name="kodilla-course.kodilla-spring.main" options="-parameters" />

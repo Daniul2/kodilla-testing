@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/kodilla-exception" />
+            <option value="$PROJECT_DIR$/kodilla-intro" />
             <option value="$PROJECT_DIR$/kodilla-spring" />
             <option value="$PROJECT_DIR$/kodilla-spring-intro" />
             <option value="$PROJECT_DIR$/kodilla-spring-web" />
