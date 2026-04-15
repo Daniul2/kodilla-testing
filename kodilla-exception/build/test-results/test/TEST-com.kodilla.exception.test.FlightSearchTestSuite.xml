@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.exception.test.FlightSearchTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-07T16:01:19.335Z" hostname="DANIL228" time="0.094">
+  <properties/>
+  <testcase name="testFindFlightWhenAirportExists()" classname="com.kodilla.exception.test.FlightSearchTestSuite" time="0.077"/>
+  <testcase name="testFindFlightWhenAirportDoesNotExist()" classname="com.kodilla.exception.test.FlightSearchTestSuite" time="0.004"/>
+  <testcase name="testFindFlightWhenAirportIsClosed()" classname="com.kodilla.exception.test.FlightSearchTestSuite" time="0.006"/>
+  <system-out><![CDATA[Flight to London is available!
+Sorry, flights to Berlin are currently suspended.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

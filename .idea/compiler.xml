@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17">
       <module name="kodilla-course.kodilla-spring-intro.main" target="17" />
       <module name="kodilla-course.kodilla-spring-intro.test" target="17" />
       <module name="kodilla-course.kodilla-spring-web.main" target="17" />
@@ -9,12 +9,21 @@
       <module name="kodilla-exception" target="21" />
       <module name="kodilla-exception.main" target="21" />
       <module name="kodilla-exception.test" target="21" />
+      <module name="kodilla-hibernate" target="17" />
+      <module name="kodilla-hibernate.main" target="17" />
+      <module name="kodilla-hibernate.test" target="17" />
+      <module name="kodilla-intro" target="21" />
+      <module name="kodilla-intro.main" target="21" />
+      <module name="kodilla-intro.test" target="21" />
       <module name="kodilla-testing.main" target="21" />
       <module name="kodilla-testing.test" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kodilla-course.kodilla-hibernate" options="-parameters" />
+      <module name="kodilla-course.kodilla-hibernate.main" options="-parameters" />
+      <module name="kodilla-course.kodilla-hibernate.test" options="-parameters" />
       <module name="kodilla-course.kodilla-spring" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-intro.main" options="-parameters" />
       <module name="kodilla-course.kodilla-spring-intro.test" options="-parameters" />
@@ -22,6 +31,9 @@
       <module name="kodilla-course.kodilla-spring-web.test" options="-parameters" />
       <module name="kodilla-course.kodilla-spring.main" options="-parameters" />
       <module name="kodilla-course.kodilla-spring.test" options="-parameters" />
+      <module name="kodilla-hibernate" options="-parameters" />
+      <module name="kodilla-hibernate.main" options="-parameters" />
+      <module name="kodilla-hibernate.test" options="-parameters" />
     </option>
   </component>
 </project>

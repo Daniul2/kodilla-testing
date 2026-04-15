@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SecondChallenge Test Suite" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-04-07T16:01:19.444Z" hostname="DANIL228" time="0.026">
+  <properties/>
+  <testcase name="Boundary Test: Exactly at x=1.0 (Should NOT throw)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.006"/>
+  <testcase name="Boundary Test: Exactly at x=2.0 (Should throw)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.003"/>
+  <testcase name="Test: x above 2.0 (Should throw)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.002"/>
+  <testcase name="Test: x below 1.0 (Should throw)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.002"/>
+  <testcase name="Test: y exactly 1.5 (Should throw)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.002"/>
+  <testcase name="Test: Should NOT throw exception for valid input (x=1.5, y=1.0)" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
