@@ -1,15 +1,12 @@
 package com.kodilla.hibernate.invoice;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "PRODUCTS")
 public class Product {
-    @Id
-    @GeneratedValue
     private Integer id;
     private String name;
 
@@ -20,20 +17,24 @@ public class Product {
         this.name = name;
     }
 
+    @Id
+    @GeneratedValue
+    @NotNull
+    @Column(name = "PRODUCT_ID", unique = true)
+    public Integer getId() {
+        return id;
+    }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
+    @Column(name = "PRODUCT_NAME")
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getId() {
-        return id;
     }
 }

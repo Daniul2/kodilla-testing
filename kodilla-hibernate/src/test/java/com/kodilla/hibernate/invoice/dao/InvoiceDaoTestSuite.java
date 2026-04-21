@@ -34,7 +34,7 @@ class InvoiceDaoTestSuite {
         invoice.getItems().add(item1);
         invoice.getItems().add(item2);
 
-        // When
+
         invoiceDao.save(invoice);
         int id = invoice.getId();
 
@@ -42,6 +42,7 @@ class InvoiceDaoTestSuite {
         assertNotEquals(0, id);
 
         // CleanUp
+
         invoiceDao.deleteById(id);
     }
 }
